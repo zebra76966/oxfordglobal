@@ -24,7 +24,13 @@ const TwoStepSignup = () => {
       <Container className="  p-5">
         <Row>
           <Col md={11} lg={8} className="mx-auto">
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }} className="bg-white p-5 rounded shadow customRounded-3" style={{ width: "100%" }}>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="bg-white p-5 rounded shadow customRounded-3"
+              style={{ width: "100%" }}
+            >
               {/* Back Arrow */}
               {step > 1 && (
                 <Button variant="link" className="p-0 mb-3" onClick={() => setStep(step - 1)}>
@@ -67,7 +73,7 @@ const TwoStepSignup = () => {
               )}
 
               {step === 2 && (
-                <>
+                <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
                   <h3 className="fw-bold">Add your personal details</h3>
                   <p className="text-muted mb-4">Complete your profile to keep account up to date and secure.</p>
                   <Form>
@@ -108,7 +114,7 @@ const TwoStepSignup = () => {
                       .
                     </p>
                   </Form>
-                </>
+                </motion.div>
               )}
 
               {/* Help Footer */}
