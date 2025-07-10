@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import BookingForm from "./forms/heroform";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
@@ -16,7 +17,9 @@ const HeroSection = () => {
           </Col> */}
 
           <Col md={10} lg={5} className="ms-auto">
-            <BookingForm />
+            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
+              <BookingForm />
+            </motion.div>
           </Col>
         </Row>
       </Container>
@@ -28,17 +31,19 @@ const HeroSection = () => {
           </Col>
 
           <Col lg={6} style={{ zIndex: 2 }}>
-            <Container className="p-lg-5 p-3">
-              <h5 className="display-6">
-                Be Unique With<span className="d-block fw-bold">Oxford Global</span>
-              </h5>
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
+              <Container className="p-lg-5 p-3">
+                <h5 className="display-6">
+                  Be Unique With<span className="d-block fw-bold">Oxford Global</span>
+                </h5>
 
-              <p className="fw-light">
-                Our purpose goes beyond transportaion. We craft experiences that evoke emotion, build prestige, and leave a lasteing impression. Every service is designed to reflet the highest
-                standards of excellence, always aligned with our clients' expectations, timelines, and unique demands. Our premium fleet is fully equipped, and our certified chauffeurs are trained to
-                deliver the very best of Oxford Global with discretiioon punctuality, and unmatched sophistication.
-              </p>
-            </Container>
+                <p className="fw-light">
+                  Our purpose goes beyond transportaion. We craft experiences that evoke emotion, build prestige, and leave a lasteing impression. Every service is designed to reflet the highest
+                  standards of excellence, always aligned with our clients' expectations, timelines, and unique demands. Our premium fleet is fully equipped, and our certified chauffeurs are trained
+                  to deliver the very best of Oxford Global with discretiioon punctuality, and unmatched sophistication.
+                </p>
+              </Container>
+            </motion.div>
           </Col>
         </Row>
       </div>

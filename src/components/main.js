@@ -4,6 +4,7 @@ import HeroSection from "./hero";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import CarFeatureCard from "./cardHome";
 import carsFleetData from "./cars.json";
+import { motion } from "framer-motion";
 const Main = () => {
   return (
     <>
@@ -14,7 +15,12 @@ const Main = () => {
           <Container className="my-5 ">
             <Row className="justify-content-center gap-5">
               <Col md={5}>
-                <div className="w-100 text-center text-light h-100 card bg-dark border-0">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="w-100 text-center text-light h-100 card bg-dark border-0"
+                >
                   <img src="/hero.jpeg" className="customRounded-3 w-100 my-4" style={{ height: "250px", objectFit: "cover" }} />
 
                   <h6 className="fs-3 fw-light ">One way</h6>
@@ -31,10 +37,15 @@ const Main = () => {
                   <Button variant="outline-light" size="lg" className="customRounded-2 mt-5 py-3 px-5 fs-3 fw-light">
                     <span className="px-5">Book now</span>
                   </Button>
-                </div>
+                </motion.div>
               </Col>
               <Col md={5}>
-                <div className="w-100 text-center text-light h-100 h-100 card bg-dark border-0">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                  className="w-100 text-center text-light h-100 h-100 card bg-dark border-0"
+                >
                   <img src="/model.jpg" className="customRounded-3 w-100 my-4" style={{ height: "250px", objectFit: "cover" }} />
 
                   <h6 className="fs-3 fw-light ">By the hour</h6>
@@ -50,7 +61,7 @@ const Main = () => {
                   <Button variant="outline-light" size="lg" className="customRounded-2 mt-5 py-3 px-5 fs-3 fw-light">
                     <span className="px-5">Book now</span>
                   </Button>
-                </div>
+                </motion.div>
               </Col>
             </Row>
           </Container>
@@ -66,7 +77,9 @@ const Main = () => {
             {carsFleetData.map((ini, i) => {
               return (
                 <Col lg={4}>
-                  <CarFeatureCard carData={ini} />
+                  <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: i - 0.5 + 0.2 }} className="w-100">
+                    <CarFeatureCard carData={ini} />
+                  </motion.div>
                 </Col>
               );
             })}

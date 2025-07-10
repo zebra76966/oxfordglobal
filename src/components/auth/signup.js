@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import { FaArrowLeft, FaQuestionCircle } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const TwoStepSignup = () => {
   const [step, setStep] = useState(1);
@@ -23,7 +24,7 @@ const TwoStepSignup = () => {
       <Container className="  p-5">
         <Row>
           <Col md={11} lg={8} className="mx-auto">
-            <div className="bg-white p-5 rounded shadow customRounded-3" style={{ width: "100%" }}>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }} className="bg-white p-5 rounded shadow customRounded-3" style={{ width: "100%" }}>
               {/* Back Arrow */}
               {step > 1 && (
                 <Button variant="link" className="p-0 mb-3" onClick={() => setStep(step - 1)}>
@@ -115,7 +116,7 @@ const TwoStepSignup = () => {
                 <FaQuestionCircle className="me-1" />
                 <span style={{ fontSize: "0.9rem" }}>Help</span>
               </div>
-            </div>
+            </motion.div>
           </Col>
         </Row>
       </Container>
