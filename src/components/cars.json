@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Mercedes-Benz S-Class",
+    "image": "/merc-s.jpg",
+    "features": ["Air conditioning", "Onboard Wi-Fi", "Courtesy water", "Phone charger"],
+    "buttonText": "See more"
+  },
+  {
+    "name": "Range Rover Vogue",
+    "image": "/range-roever-v.jpg",
+    "features": ["Air conditioning", "Onboard Wi-Fi", "Courtesy water", "Phone charger"],
+    "buttonText": "See more"
+  },
+  {
+    "name": "Mercedes-Benz V-Class",
+    "image": "/merc-v.jpg",
+    "features": ["Air conditioning", "Onboard Wi-Fi", "Courtesy water", "Phone charger"],
+    "buttonText": "See more"
+  }
+]

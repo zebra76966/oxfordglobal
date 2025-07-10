@@ -1,0 +1,72 @@
+:root {
+  --dark-color: #0f0f0f !important;
+}
+
+.bg-dark {
+  background-color: #0f0f0f !important;
+}
+
+.bgHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/hero.jpeg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-light-before {
+  position: relative;
+}
+.bg-light-before::before {
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  border-radius: 2em 0 0 0;
+  height: 100%;
+  z-index: 1;
+}
+
+.customRounded-3 {
+  border-radius: 2em;
+}
+.customRounded-2 {
+  border-radius: 1.1em;
+}
+
+.customRounded-1 {
+  border-radius: 0.8em;
+}
+
+.bgBottom {
+  background: linear-gradient(
+      to bottom,
+      #5c5c5c 0%,
+      /* Dark Gray Top */ #5c5c5c 20%,
+      /* 20% height dark gray */ white 20%,
+      /* White starts */ white 50%,
+      /* White continues until 70% */ transparent 50%
+    ),
+    /* Then image appears */ url("../../public/bg-bottom.jpg") no-repeat top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.custom-footer {
+  background-color: #0f0f0f;
+  border-top: 1px solid #444;
+  font-size: 0.875rem;
+}
+
+.custom-footer .btn {
+  font-size: 0.75rem;
+  border-radius: 5px;
+}
+
+.custom-footer svg {
+  font-size: 1rem;
+  cursor: pointer;
+}
