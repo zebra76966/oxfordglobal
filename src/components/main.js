@@ -21,7 +21,7 @@ const Main = () => {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className="w-100 text-center text-light h-100 card bg-dark border-0"
                 >
-                  <img src="/hero.jpeg" className="customRounded-3 w-100 my-4" style={{ height: "250px", objectFit: "cover" }} />
+                  <img src="/One-way.png" className="customRounded-3 w-100 my-4" style={{ height: "250px", objectFit: "cover" }} />
 
                   <h6 className="fs-3 fw-light ">One way</h6>
 
@@ -46,7 +46,7 @@ const Main = () => {
                   transition={{ duration: 0.5, delay: 0.5 }}
                   className="w-100 text-center text-light h-100 h-100 card bg-dark border-0"
                 >
-                  <img src="/model.jpg" className="customRounded-3 w-100 my-4" style={{ height: "250px", objectFit: "cover" }} />
+                  <img src="/By-the-our.png" className="customRounded-3 w-100 my-4" style={{ height: "250px", objectFit: "cover" }} />
 
                   <h6 className="fs-3 fw-light ">By the hour</h6>
 

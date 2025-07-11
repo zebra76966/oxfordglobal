@@ -9,10 +9,10 @@ const CustomNavbar = () => {
       <Container className="py-3">
         {/* Logo */}
         <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
-          <Image src="/logo192.png" alt="Oxford Global" height="30" className="me-2" />
-          <span className="fw-bold text-white" style={{ fontSize: "1.25rem" }}>
+          <Image src="/Branca_White.png" alt="Oxford Global" height="50" className="me-2" />
+          {/* <span className="fw-bold text-white" style={{ fontSize: "1.25rem" }}>
             Oxford<span style={{ fontWeight: 400 }}>Global</span>
-          </span>
+          </span> */}
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-nav" />
