@@ -27,7 +27,7 @@ const HeroSection = () => {
       <div className="bg-light-before pt-5">
         <Row className="align-items-center px-0 mx-0 pt-5">
           <Col lg={6} style={{ zIndex: 2 }} className="ps-0">
-            <img src="model.jpg" className="h-100 w-100" style={{ maxHeight: "50dvh", objectFit: "cover", borderRadius: "0 2em 2em 2em" }} />
+            <img src="model.jpg" className="h-100 w-100" style={{ maxHeight: "50dvh", objectFit: "cover", borderRadius: "0 2em 2em 0em" }} />
           </Col>
 
           <Col lg={6} style={{ zIndex: 2 }}>
