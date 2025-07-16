@@ -2,24 +2,27 @@ import React, { useState } from "react";
 import { Container, Row, Col, Form, Button, ToggleButtonGroup, ToggleButton, InputGroup } from "react-bootstrap";
 import { FaMapMarkerAlt, FaCalendarAlt, FaClock } from "react-icons/fa";
 import { CiLocationOn, CiCalendar, CiClock2 } from "react-icons/ci";
+import "./heroform.css";
 
 const BookingForm = () => {
   const [tripType, setTripType] = useState("hourly");
 
   return (
-    <Container className="p-4 w-100" style={{ borderRadius: "20px", background: "#fff" }}>
+    <Container className=" w-100 px-0" style={{ borderRadius: "20px", background: "#fff" }}>
       {/* Trip Type Tabs */}
       <ToggleButtonGroup type="radio" name="tripType" value={tripType} onChange={(val) => setTripType(val)} className="w-100 mb-4">
         <ToggleButton
           id="tbg-radio-1"
           value={"oneway"}
           variant="light"
-          className={`w-50 text-${tripType == "oneway" ? "light" : "dark"} border-0 rounded-4 fs-5`}
+          className={`w-50 text-${tripType == "oneway" ? "light" : "dark"} border-0  fs-5 py-3`}
           style={{
             backgroundColor: tripType === "oneway" ? "#000" : "white",
             fontWeight: 400,
+            borderTopRightRadius: "15px",
             borderTopLeftRadius: "15px",
-            borderBottomLeftRadius: "15px",
+            borderBottomLeftRadius: "0",
+            borderBottomRightRadius: "15px",
           }}
         >
           One way
@@ -28,12 +31,14 @@ const BookingForm = () => {
           id="tbg-radio-2"
           value={"hourly"}
           variant="dark"
-          className={`w-50 text-${tripType == "hourly" ? "light" : "dark"} border-0 rounded-4 fs-5`}
+          className={`w-50 text-${tripType == "hourly" ? "light" : "dark"} border-0  fs-5 py-3`}
           style={{
             backgroundColor: tripType === "hourly" ? "#000" : "white",
             fontWeight: 400,
             borderTopRightRadius: "15px",
-            borderBottomRightRadius: "15px",
+            borderTopLeftRadius: "15px",
+            borderBottomLeftRadius: "15px",
+            borderBottomRightRadius: "0",
           }}
         >
           By the hour
@@ -41,36 +46,40 @@ const BookingForm = () => {
       </ToggleButtonGroup>
 
       {/* Form Inputs */}
-      <Form>
-        <InputGroup className="mb-3 bg-light px-3 py-2 rounded d-flex gap-2 align-items-center">
-          <CiLocationOn className="me-2 mt-1 fs-4 text-muted" />
+      <Form className="px-4 pb-4 ">
+        <InputGroup className="mb-3 bg-light pe-3 ps-1 py-2 rounded d-flex gap-2 align-items-center">
+          <img src="icons/Preto-Black/Prancheta 8.png" width={40} className="me-1 mt-1" />
+          {/* <CiLocationOn className="me-2 mt-1 fs-4 text-muted" /> */}
           <Form.Group>
             <Form.Label className="mb-0 fw-bold text-dark">From</Form.Label>
             <Form.Control type="text" placeholder="Address, airport, hotel, ..." className="border-0 p-0 bg-light text-muted" />
           </Form.Group>
         </InputGroup>
 
-        <InputGroup className="mb-3 bg-light px-3 py-2 rounded d-flex gap-2 align-items-center">
-          <CiLocationOn className="me-2 mt-1 fs-4 text-muted" />
+        <InputGroup className="mb-3 bg-light pe-3 ps-1 py-2 rounded d-flex gap-2 align-items-center">
+          <img src="icons/Preto-Black/Prancheta 8.png" width={40} className="me-1 mt-1" />
+          {/* <CiLocationOn className="me-2 mt-1 fs-4 text-muted" /> */}
           <Form.Group>
             <Form.Label className="mb-0">To</Form.Label>
             <Form.Control type="text" placeholder="Address, airport, hotel, ..." className="border-0 p-0 bg-light" />
           </Form.Group>
         </InputGroup>
 
-        <InputGroup className="mb-3 bg-light px-3 py-2 rounded d-flex gap-2 align-items-center">
-          <CiCalendar className="me-2 mt-1 fs-4 text-muted" />
+        <InputGroup className="mb-3 bg-light pe-3 ps-1 py-2 rounded d-flex gap-2 align-items-center">
+          <img src="icons/Preto-Black/Prancheta 13.png" width={40} className="me-1 mt-1" />
+          {/* <CiCalendar className="me-2 mt-1 fs-4 text-muted" /> */}
           <Form.Group>
             <Form.Label className="mb-0">Date</Form.Label>
-            <Form.Control type="date" placeholder="Wed, May 28, 2025" className="border-0 p-0 bg-light" />
+            <Form.Control type="date" className="border-0 p-0 bg-light no-default-icon w-100" />
           </Form.Group>
         </InputGroup>
 
-        <InputGroup className="mb-3 bg-light px-3 py-2 rounded d-flex gap-2 align-items-center">
-          <CiClock2 className="me-2 mt-1 fs-4 text-muted" />
+        <InputGroup className="mb-3 bg-light pe-3 ps-1 py-2 rounded d-flex gap-2 align-items-center">
+          <img src="icons/Preto-Black/Prancheta 7.png" width={40} className="me-1 mt-1" />
+          {/* <CiClock2 className="me-2 mt-1 fs-4 text-muted" /> */}
           <Form.Group>
             <Form.Label className="mb-0">Time</Form.Label>
-            <Form.Control type="time" placeholder="17:25" className="border-0 p-0 bg-light" />
+            <Form.Control type="time" className="border-0 p-0 bg-light no-default-icon w-100" />
           </Form.Group>
         </InputGroup>
 

@@ -1,0 +1,37 @@
+.vmv-section {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+.vmv-title h3 {
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.textbtm {
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 992px) {
+  .textbtm {
+    transform: translateY(0px);
+    margin-top: 1em;
+  }
+}
+
+.vmv-title hr {
+  border-top: 1px solid #555;
+  width: 100%;
+  margin: 0.4rem 0;
+}
+
+.value-title {
+  font-weight: 600;
+}
+
+.value-desc {
+  color: #333;
+
+  margin-top: 0.5rem;
+}

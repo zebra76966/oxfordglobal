@@ -1,0 +1,48 @@
+.benefits-section {
+  margin-top: 10em !important;
+  background-color: #0e0e0e;
+  color: #000;
+}
+
+.benefits-section .container {
+  transform: translateY(-29%);
+}
+.benefit-card {
+  background-color: #fff;
+  border-radius: 3rem;
+
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  max-width: 500px;
+}
+
+.benefit-icon {
+  background-color: #000;
+  color: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.benefit-title {
+  margin-top: 2rem;
+}
+
+.line-height-2 {
+  line-height: 1.6em;
+}
+
+@media screen and (max-width: 992px) {
+  .benefits-section .container {
+    transform: translateY(0%);
+  }
+}

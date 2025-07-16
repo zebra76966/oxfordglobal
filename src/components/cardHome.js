@@ -4,7 +4,7 @@ import { BsCheckCircle } from "react-icons/bs";
 
 const CarFeatureCard = ({ carData }) => {
   return (
-    <Card className="text-center border-0 shadow-sm px-3 pt-4 pb-3 w-100" style={{ borderRadius: "30px" }}>
+    <Card className="text-center border-0 shadow-lg px-3 pt-4 pb-3 w-100" style={{ borderRadius: "30px" }}>
       <Card.Body>
         <Card.Title className="mb-3 fw-light fs-4">{carData.name}</Card.Title>
 
@@ -15,8 +15,8 @@ const CarFeatureCard = ({ carData }) => {
         <ListGroup variant="flush" className="mt-3">
           {carData.features.map((feature, index) => (
             <ListGroup.Item key={index} className="d-flex align-items-center justify-content-start gap-5 px-4 border-top border-bottom py-3" style={{ fontSize: "0.95rem", borderColor: "#ccc" }}>
-              <BsCheckCircle className="me-2 text-dark fs-3" />
-              <span className="w-50 fs-5 text-start"> {feature} </span>
+              <BsCheckCircle className="me-2  text-dark fs-3" />
+              <span className="w-75  fs-5 text-start"> {feature} </span>
             </ListGroup.Item>
           ))}
         </ListGroup>

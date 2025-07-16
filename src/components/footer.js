@@ -16,13 +16,14 @@ const Footer = () => {
 
             {/* Right Side */}
             <Col xs="auto" className="d-flex align-items-center gap-3 flex-wrap">
-              <Button variant="outline-light" size="lg" className="px-4 ">
+              <Button variant="outline-light" size="md" className="px-4 py-2 fs-6">
                 Contact
               </Button>
-              <CiInstagram className="fs-4" />
-              <IoCallOutline className="fs-4" />
-              <CiMail className="fs-4" />
-              <CiCircleQuestion className="fs-3" />
+              <img src="/icons/Branco-White/Prancheta 24.png" width={60} />
+              <img src="/icons/Branco-White/Prancheta 28.png" width={60} />
+              <img src="/icons/Branco-White/Prancheta 21.png" width={60} />
+              <img src="/icons/Branco-White/Prancheta-23.png" width={60} />
+
               <span className="lead">Help</span>
             </Col>
           </Row>

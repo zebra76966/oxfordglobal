@@ -27,14 +27,14 @@ const HeroSection = () => {
       <div className="bg-light-before pt-5">
         <Row className="align-items-center px-0 mx-0 pt-5">
           <Col lg={6} style={{ zIndex: 2 }} className="ps-0">
-            <img src="model.jpg" className="h-100 w-100" style={{ maxHeight: "50dvh", objectFit: "cover", borderRadius: "0 2em 2em 0em" }} />
+            <img src="model.jpg" className="h-100 w-100" style={{ height: "50dvh", objectFit: "cover", borderRadius: "0 2em 2em 0em" }} />
           </Col>
 
-          <Col lg={6} style={{ zIndex: 2 }}>
+          <Col lg={5} xl={4} style={{ zIndex: 2 }}>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
               <Container className="p-lg-5 p-3">
                 <h5 className="display-6 font-thin">
-                  Be Unique With<span className="d-block fw-bold">Oxford Global</span>
+                  Be Unique With<span className="d-block f-bold">Oxford Global</span>
                 </h5>
 
                 <p className="fw-light lead mt-5">

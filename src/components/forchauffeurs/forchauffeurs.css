@@ -1,0 +1,50 @@
+.chauffeur-section {
+  background-color: #0e0e0e;
+  color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.section-row {
+  padding-bottom: 2rem;
+}
+
+.icon-box {
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.divider {
+  border-top: 1px solid #888;
+  margin: 0.5rem 0;
+}
+
+.section-content ul {
+  padding-left: 1.2rem;
+}
+
+.section-content li {
+  margin-bottom: 0.5rem;
+}
+
+.bgForChauffers {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../../public/Chofer.jpg");
+  height: 45dvh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.translate-lg-20 {
+  transform: translateY(-50%);
+}

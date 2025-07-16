@@ -1,0 +1,25 @@
+/* Hide the default browser icon */
+.no-default-icon::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Remove padding so entire area is clickable */
+.no-default-icon {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0.6rem 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .steps {
+    scale: 0.6;
+  }
+}
