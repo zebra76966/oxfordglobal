@@ -32,7 +32,7 @@ const AboutUs = () => {
               </p>
             </Col>
             <Col xs={12} lg={11} className="mx-auto">
-              <img src="bg-bottom.jpg" className="aboutIntroimg" />
+              <img src="/Imagem-2.jpg" className="aboutIntroimg" />
             </Col>
             <Col lg={12} xl={10} className="col-lg-10 mx-auto  text-center">
               <p className="font-thin text-dark lead line-height py-5 px-lg-3 text-start">
