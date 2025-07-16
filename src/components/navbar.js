@@ -52,7 +52,7 @@ const CustomNavbar = () => {
 
             {/* Sign Up Button with icon */}
             <Button variant="outline-light" className="px-4 py-0 mx-2 d-flex align-items-center fs-6sm hoverImg" onClick={() => navigate("/login")}>
-              <img src="/icons/branco-white/Prancheta 11.png" width={40} />
+              <img src="/icons/Branco-White/Prancheta 11.png" width={40} />
               {/* <i className="fa fa-user me-2" /> */}
               Sign Up
             </Button>
