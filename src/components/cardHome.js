@@ -22,7 +22,7 @@ const CarFeatureCard = ({ carData }) => {
         </ListGroup>
 
         {/* Button */}
-        <Button variant="outline-dark" className="mt-4 customRounded-1 px-4 py-2 fw-light fs-5 px-4">
+        <Button variant="outline-dark" className="mt-4 customRounded-1 px-3 py-1 fw-light fs-5">
           See more
         </Button>
       </Card.Body>

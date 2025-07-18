@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <div className="w-100 bgHero">
+    <div className="w-100 bgHero pt-5">
       <Container className="py-5 ">
-        <Row className="align-items-center g-lg-5">
+        <Row className="align-items-center g-lg-5 pt-5">
           {/* <Col lg={7} className="text-center text-lg-start">
             <h1 className="display-4 fw-bold lh-1 mb-3">Vertically centered hero sign-up form</h1>
             <p className="col-lg-10 fs-4">
@@ -16,7 +16,7 @@ const HeroSection = () => {
             </p>
           </Col> */}
 
-          <Col md={10} lg={5} className="ms-auto">
+          <Col md={10} lg={5} className="ms-auto pt-4">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
               <BookingForm />
             </motion.div>

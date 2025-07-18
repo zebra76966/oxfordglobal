@@ -53,7 +53,7 @@ const Main = () => {
                   </p>
 
                   <div className="w-100">
-                    <Button variant="outline-light" size="lg" className="customRounded-2 mt-5 py-3 px-4 fs-3 fw-light">
+                    <Button variant="outline-light" size="lg" className="customRounded-2 mt-5 py-3 px-3 fs-4 fw-light">
                       <span className="px-5">Book now</span>
                     </Button>
                   </div>
@@ -79,7 +79,7 @@ const Main = () => {
                     disposal. A tailored solution for those who value control, comfort, and uninterrupted avalability without the constraints of fixed schedules.
                   </p>
                   <div className="w-100">
-                    <Button variant="outline-light" size="lg" className="customRounded-2 mt-5 py-3 px-4 fs-3 fw-light">
+                    <Button variant="outline-light" size="lg" className="customRounded-2 mt-5 py-3 px-3 fs-4 fw-light">
                       <span className="px-5">Book now</span>
                     </Button>
                   </div>
