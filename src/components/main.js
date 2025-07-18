@@ -31,19 +31,19 @@ const Main = () => {
             About the <span className="f-bold"> services</span>
           </h5>
           <Container className="my-5 " id="services">
-            <Row className="justify-content-center gap-5">
+            <Row className="gap-3 justify-content-around">
               <Col md={5}>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
-                  className="w-100 text-center text-light h-100 card bg-dark border-0"
+                  className="w-100 text-center text-light h-100 card bg-dark border-0 "
                 >
-                  <img src="/One-way.jpg" className="customRounded-3 w-100 my-4" style={{ height: "250px", objectFit: "cover" }} />
+                  <img src="/One-way.jpg" className="customRounded-3 w-100 my-5" style={{ height: "220px", objectFit: "cover" }} />
 
-                  <h6 className="fs-3 fw-light ">One way</h6>
+                  <h6 className="fs-1 font-thin fw-lighter">One way</h6>
 
-                  <p className="fw-semibold lead my-4">
+                  <p className="fw-semibold lead my-4 fs-3">
                     Elegant simplicity for <span className="d-block"> direct transfers</span>
                   </p>
 
@@ -64,13 +64,13 @@ const Main = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
-                  className="w-100 text-center text-light h-100 h-100 card bg-dark border-0"
+                  className="w-100 text-center text-light h-100 h-100 card bg-dark border-0 "
                 >
-                  <img src="/By-the-our.jpg" className="customRounded-3 w-100 my-4" style={{ height: "250px", objectFit: "cover" }} />
+                  <img src="/By-the-our.jpg" className="customRounded-3 w-100 my-5" style={{ height: "220px", objectFit: "cover" }} />
 
-                  <h6 className="fs-3 fw-light ">By the hour</h6>
+                  <h6 className="fs-1 font-thin fw-lighter">By the hour</h6>
 
-                  <p className="fw-semibold lead my-4">
+                  <p className="fw-semibold  my-4 fs-3">
                     Flexibility and exclusivity on <span className="d-block"> your schedule</span>
                   </p>
 
