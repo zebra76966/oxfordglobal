@@ -5,7 +5,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 const CustomNavbar = () => {
   const navigate = useNavigate();
   return (
-    <Navbar expand="lg" variant="dark" style={{ backgroundColor: "#0f0f0f", zIndex: "99999" }} className="py-4 position-fixed top-0 start-0 w-100">
+    <Navbar expand="lg" variant="dark" style={{ backgroundColor: "#0f0f0f", zIndex: "99999" }} className="py-4 position-sticky top-0 start-0 w-100">
       <Container className="py-3">
         {/* Logo */}
         <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
