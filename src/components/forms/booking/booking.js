@@ -45,17 +45,17 @@ const BookingWizard = () => {
 
               <div className="d-flex justify-content-between mt-4">
                 {step > 1 && (
-                  <Button variant="outline-dark" className="px-5 fs-5 rounded-4 py-2 btn-lg" onClick={prevStep}>
+                  <Button variant="outline-dark" className="px-4 fs-5 rounded-4 py-2 btn-lg" onClick={prevStep}>
                     Back
                   </Button>
                 )}
                 {step < totalSteps && (
-                  <Button variant="dark" className="px-5 fs-5 rounded-4 py-2 btn-lg" onClick={nextStep}>
+                  <Button variant="dark" className="px-4 fs-5 rounded-4 py-2 btn-lg" onClick={nextStep}>
                     Next
                   </Button>
                 )}
                 {step === totalSteps && (
-                  <Button variant="dark" className="px-5 fs-5 rounded-4 py-2 btn-lg" onClick={() => alert("Booking Submitted!")}>
+                  <Button variant="dark" className="px-4 fs-5 rounded-4 py-2 btn-lg" onClick={() => alert("Booking Submitted!")}>
                     Confirm
                   </Button>
                 )}

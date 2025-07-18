@@ -28,7 +28,7 @@ const ForChauffers = () => {
               </p>
 
               <div className="w-100">
-                <Button variant="outline-dark" size="md" className="customRounded-2 mt-5 py-3 px-5 fs-3 fw-light">
+                <Button variant="outline-dark" size="md" className="customRounded-2 mt-5 py-3 px-4 fs-3 fw-light">
                   <span className="px-5">Apply </span>
                 </Button>
               </div>
