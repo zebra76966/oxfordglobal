@@ -10,7 +10,7 @@ const AboutUs = () => {
     <>
       <div className="w-100 bgAboutUs d-flex align-items-center justify-content-center">
         <motion.h5 className="display-4 text-light" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.5 }}>
-          Chauffeurs
+          About Us
         </motion.h5>
       </div>
 
