@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 const LoginForm = () => {
   return (
-    <div className="login-wrapper py-5 px-lg-5 p-3 d-flex align-items-center bg-light" style={{ height: "80dvh" }}>
-      <Container className="  p-5">
+    <div className="login-wrapper py-5 px-lg-5 p-3 d-flex align-items-center bg-light" style={{ minHeight: "80dvh" }}>
+      <Container className="  p-lg-5">
         <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
           <Row className="align-items-center px-3 customRounded-3 justify-content-center bg-white rounded shadow py-5">
             {/* Left Side - Email Login */}

@@ -20,15 +20,15 @@ const TwoStepSignup = () => {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center bg-light" style={{ height: "80dvh" }}>
-      <Container className="  p-5">
+    <div className="d-flex justify-content-center align-items-center bg-light" style={{ minHeight: "80dvh" }}>
+      <Container className="  p-md-5">
         <Row>
           <Col md={11} lg={8} className="mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-white p-5 rounded shadow customRounded-3"
+              className="bg-white p-md-5 p-3  rounded shadow customRounded-3"
               style={{ width: "100%" }}
             >
               {/* Back Arrow */}
