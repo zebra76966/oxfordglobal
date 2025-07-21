@@ -22,10 +22,14 @@
   font-family: "blauerNue-bold";
   src: url("../../public/fonts/BlauerNue-Bold.otf") format("opentype");
 }
+@font-face {
+  font-family: "blauerNue-light";
+  src: url("../../public/fonts/BlauerNue-Light.otf") format("opentype");
+}
 
 * {
   font-family: "blauerNue-thin";
-  font-size: 97%;
+  /* font-size: 97%; */
 }
 h1,
 h2,
@@ -36,8 +40,16 @@ h6 {
   font-family: "blauerNue-regular";
 }
 
+.font-regular {
+  font-family: "blauerNue-regular";
+}
+
 .font-thin {
   font-family: "blauerNue-thin";
+}
+
+.font-light {
+  font-family: "blauerNue-light";
 }
 .line-height {
   line-height: 2em;

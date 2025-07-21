@@ -27,85 +27,97 @@ const Main = () => {
 
       <div className="w-100 bg-white pt-5">
         <div className="w-100 bg-dark  py-4">
-          <h5 className=" fs-2 font-thin text-center mb-5 pt-4 text-light">
+          <h5 className=" fs-2 font-thin text-center mb-3 pt-5 text-light">
             About the <span className="f-bold"> services</span>
           </h5>
           <Container className="my-5 " id="services">
-            <Row className="gap-3 justify-content-around">
-              <Col md={5}>
+            <div className="d-lg-flex  justify-content-around">
+              <div className="w-100" style={{ maxWidth: "526.88px" }}>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className="w-100 text-center text-light h-100 card bg-dark border-0 "
                 >
-                  <img src="/One-way.jpg" className="customRounded-3 w-100 my-5" style={{ height: "220px", objectFit: "cover" }} />
+                  <img src="/One-way.jpg" className="customRounded-3 w-100 my-5" style={{ height: "234px", objectFit: "cover" }} />
 
-                  <h6 className="fs-1 font-thin fw-lighter">One way</h6>
+                  <h6 className="fs-1 font-thin" style={{ fontSize: "39.3px" }}>
+                    One way
+                  </h6>
 
-                  <p className="fw-semibold lead my-4 fs-3">
-                    Elegant simplicity for <span className="d-block"> direct transfers</span>
+                  <p className="f-bold my-4 fs-3" style={{ fontSize: "28px" }}>
+                    Elegant simplicity for{" "}
+                    <span className="d-block f-bold  " style={{ fontSize: "28px" }}>
+                      {" "}
+                      direct transfers
+                    </span>
                   </p>
 
-                  <p className="font-thin text-lighter lead line-height h-100">
+                  <p className="font-thin  lead line-height h-100" style={{ fontSize: "20px" }}>
                     Designed for seamless point-to-point journeys such as airport, hotel, or event transfers, the One Way service combines efficiency, punctuality, and sophistication. A smooth and
                     discreet experience for those who seek to arrive with peace of mind and style.
                   </p>
 
                   <div className="w-100">
-                    <Button variant="outline-light" size="lg" className="customRounded-2 mt-5 py-3 px-3 fs-4 fw-light">
+                    <Button variant="outline-light" size="lg" className="customRounded-2 mt-5 text-center fw-light w-100" style={{ maxWidth: "334.88px", height: "84.31px", fontSize: "31.86px" }}>
                       <span className="px-5">Book now</span>
                     </Button>
                   </div>
                 </motion.div>
-              </Col>
-              <Col md={5}>
+              </div>
+              <div className="w-100" style={{ maxWidth: "526.88px" }}>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
                   className="w-100 text-center text-light h-100 h-100 card bg-dark border-0 "
                 >
-                  <img src="/By-the-our.jpg" className="customRounded-3 w-100 my-5" style={{ height: "220px", objectFit: "cover" }} />
+                  <img src="/By-the-our.jpg" className="customRounded-3 w-100 my-5" style={{ height: "234px", objectFit: "cover" }} />
 
-                  <h6 className="fs-1 font-thin fw-lighter">By the hour</h6>
+                  <h6 className="fs-1 font-thin " style={{ fontSize: "39.3px" }}>
+                    By the hour
+                  </h6>
 
-                  <p className="fw-semibold  my-4 fs-3">
-                    Flexibility and exclusivity on <span className="d-block"> your schedule</span>
+                  <p className="f-bold  my-4 " style={{ fontSize: "28px" }}>
+                    Flexibility and exclusivity on{" "}
+                    <span className="d-block f-bold  " style={{ fontSize: "28px" }}>
+                      {" "}
+                      your schedule
+                    </span>
                   </p>
 
-                  <p className="font-thin text-lighter lead line-height h-100">
+                  <p className="font-thin  lead line-height h-100" style={{ fontSize: "20px" }}>
                     Perfect for appointments with multiple stops, consecutive meetings, or extended use, the By the Hour service offers complete freedom of itinerary with a dedicated chauffeur at your
                     disposal. A tailored solution for those who value control, comfort, and uninterrupted avalability without the constraints of fixed schedules.
                   </p>
                   <div className="w-100">
-                    <Button variant="outline-light" size="lg" className="customRounded-2 mt-5 py-3 px-3 fs-4 fw-light">
-                      <span className="px-5">Book now</span>
+                    <Button variant="outline-light" size="lg" className="customRounded-2 mt-5 text-center fw-light w-100" style={{ maxWidth: "334.88px", height: "84.31px", fontSize: "31.86px" }}>
+                      Book now
                     </Button>
                   </div>
                 </motion.div>
-              </Col>
-            </Row>
+              </div>
+            </div>
           </Container>
         </div>
       </div>
 
       <div className="bgBottom   pt-5">
         <Container>
-          <h5 className=" display-6 text-center mb-5 pt-4 font-thin text-light">
+          <h5 className=" display-6 text-center mb-2 pt-4 font-thin text-light">
             Our <span className="f-bold"> vehicle fleet</span>
           </h5>
-          <Row className="position-relative" style={{ zIndex: "10", transform: "translateY(60px)" }}>
+          <div className="position-relative d-lg-flex justify-content-center gap-4" style={{ zIndex: "10", transform: "translateY(60px)" }}>
             {carsFleetData.map((ini, i) => {
               return (
-                <Col lg={4}>
+                <div className="mx-auto mx-lg-0 mb-3 mb-lg-0" style={{ width: "362.63px" }}>
                   <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: i - 0.5 + 0.2 }} className="w-100 ">
                     <CarFeatureCard carData={ini} />
                   </motion.div>
-                </Col>
+                </div>
               );
             })}
-          </Row>
+          </div>
         </Container>
         <img src="/Imagem-1.png" className="w-100 position-relative bgimgBtm" style={{ zIndex: "3" }} />
       </div>

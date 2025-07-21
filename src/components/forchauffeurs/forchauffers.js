@@ -21,7 +21,7 @@ const ForChauffers = () => {
               <h5 className="display-6 font-thin mt-5">
                 Why become a chauffeur for <span className="f-bold d-block">at Oxford Global?</span>
               </h5>
-              <p className="font-thin text-dark lead line-height py-5">
+              <p className="font-thin text-dark lead line-height py-5 text-center mx-auto" style={{ maxWidth: "848.65px", fontSzie: "20px" }}>
                 At Oxford Global, our focus is to deliver an exceptional experience for both our clients and our chauffeurs. We value proffesionalism, respect, and attention to detail in every service
                 provided. Our clientele is composed of loyal, high-standard individuals who appreciate a personalized, discreet, and respoectful approach. By joining Oxford Global, you reporesnst a
                 prestigious brand have the opportunity to work in a structured, supportive environment committed to excellence.

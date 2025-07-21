@@ -34,25 +34,26 @@ const CustomNavbar = () => {
               // }}
               as={NavLink}
               to={"/#services"}
-              className="text-white fs-6sm mx-2"
+              className="text-white font-light mx-2"
+              style={{ fontSize: "14.81px" }}
             >
               Services
             </Nav.Link>
-            <Nav.Link as={NavLink} to={"/aboutus"} className="text-white fs-6sm mx-2">
+            <Nav.Link as={NavLink} to={"/aboutus"} className="text-white font-light mx-2" style={{ fontSize: "14.81px" }}>
               About Us
             </Nav.Link>
-            <Nav.Link as={NavLink} to={"/forchauffeurs"} className="text-white fs-6sm mx-2">
+            <Nav.Link as={NavLink} to={"/forchauffeurs"} className="text-white font-light mx-2" style={{ fontSize: "14.81px" }}>
               For chauffeurs
             </Nav.Link>
 
             {/* Book Button */}
-            <Button variant="outline-light" className="px-5 py-2 mx-2 fs-6sm" onClick={() => navigate("/booking")}>
+            <Button variant="outline-light" className="px-5 py-2 mx-2 font-light" style={{ height: "43.11px" }} onClick={() => navigate("/booking")}>
               Book
             </Button>
 
             {/* Sign Up Button with icon */}
-            <Button variant="outline-light" className="px-4 py-0 mx-2 d-flex align-items-center fs-6sm hoverImg" onClick={() => navigate("/login")}>
-              <img src="/icons/Branco-White/Prancheta 11.png" width={40} />
+            <Button variant="outline-light" className="px-4 py-0 mx-2 d-flex gap-2 align-items-center font-light hoverImg" style={{ height: "43.11px" }} onClick={() => navigate("/login")}>
+              <img src="/icons/svgs/user-w.svg" width={20.62} />
               {/* <i className="fa fa-user me-2" /> */}
               Sign Up
             </Button>
