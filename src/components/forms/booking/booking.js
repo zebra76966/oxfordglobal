@@ -31,38 +31,37 @@ const BookingWizard = () => {
     <div className="d-flex justify-content-center align-items-center bg-light " style={{ minHeight: "70dvh" }}>
       <Container className="  p-5">
         <StepProgress step={step} />
-        <Row>
-          <Col md={11} lg={9} className="mx-auto">
-            <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} style={{ width: "100%" }}>
-              <div className="mt-5">
-                {step === 1 && <StepOne />}
-                {step === 2 && (
-                  <StepTwo setSelectedCar={(e) => setFormData({ ...formData, selectedCar: e })} selectedCar={formData.selectedCar} onBack={() => prevStep()} onContinue={() => nextStep()} />
-                )}
-                {step === 3 && <StepThree setFormData={(e) => setFormData(e)} formData={formData} onBack={() => prevStep()} onContinue={() => nextStep()} />}
-                {step === 4 && <StepFour />}
-              </div>
 
-              <div className="d-flex justify-content-between mt-4">
-                {step > 1 && (
-                  <Button variant="outline-dark" className="px-4 fs-5 rounded-4 py-2 btn-lg" onClick={prevStep}>
-                    Back
-                  </Button>
-                )}
-                {step < totalSteps && (
-                  <Button variant="dark" className="px-4 fs-5 rounded-4 py-2 btn-lg" onClick={nextStep}>
-                    Next
-                  </Button>
-                )}
-                {step === totalSteps && (
-                  <Button variant="dark" className="px-4 fs-5 rounded-4 py-2 btn-lg" onClick={() => alert("Booking Submitted!")}>
-                    Confirm
-                  </Button>
-                )}
-              </div>
-            </motion.div>
-          </Col>
-        </Row>
+        <div className="mx-auto" style={{ maxWidth: "841.75px" }}>
+          <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} style={{ width: "100%" }}>
+            <div className="mt-5">
+              {step === 1 && <StepOne />}
+              {step === 2 && (
+                <StepTwo setSelectedCar={(e) => setFormData({ ...formData, selectedCar: e })} selectedCar={formData.selectedCar} onBack={() => prevStep()} onContinue={() => nextStep()} />
+              )}
+              {step === 3 && <StepThree setFormData={(e) => setFormData(e)} formData={formData} onBack={() => prevStep()} onContinue={() => nextStep()} />}
+              {step === 4 && <StepFour />}
+            </div>
+
+            <div className="d-flex justify-content-between mt-4">
+              {step > 1 && (
+                <Button variant="outline-dark" className="px-4 fs-5 rounded-4 py-2 btn-lg" onClick={prevStep}>
+                  Back
+                </Button>
+              )}
+              {step < totalSteps && (
+                <Button variant="dark" className="px-4 fs-5 rounded-4 py-2 btn-lg" onClick={nextStep}>
+                  Next
+                </Button>
+              )}
+              {step === totalSteps && (
+                <Button variant="dark" className="px-4 fs-5 rounded-4 py-2 btn-lg" onClick={() => alert("Booking Submitted!")}>
+                  Confirm
+                </Button>
+              )}
+            </div>
+          </motion.div>
+        </div>
       </Container>
     </div>
   );

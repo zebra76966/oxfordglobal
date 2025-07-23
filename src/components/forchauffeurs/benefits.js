@@ -23,21 +23,25 @@ const benefits = [
 
 const DriverBenefits = () => {
   return (
-    <div className="benefits-section pt-5 mt-5">
+    <div className="benefits-section pt-lg-5 pt-2 mt-5">
       <Container>
-        <Row className="justify-content-center">
+        <div className="justify-content-center d-lg-flex gap-3">
           {benefits.map((item, idx) => (
-            <Col key={idx} md={4} className="mb-4 p-4">
-              <div className="benefit-card text-center border-dark border-1 border p-4">
+            <div className="mb-lg-4 mt-lg-0 mt-4 mx-lg-0 mx-auto" style={{ maxWidth: "362.63px" }}>
+              <div className="benefit-card text-center border-dark border-1 border p-3 w-100">
                 <div className="benefit-icon">
                   <img src={item.icon} width={90} />
                 </div>
-                <h5 className="benefit-title fs-2 f-bold my-5 pt-3">{item.title}</h5>
-                <p className=" lead font-thin text-dark mt-3 pb-3 line-height-2">{item.text}</p>
+                <h5 className="benefit-title  f-bold my-5 pt-3" style={{ fontSize: "28px" }}>
+                  {item.title}
+                </h5>
+                <p className=" lead font-thin text-dark mt-3 pb-3 line-height-2" style={{ fontSize: "20px", width: "307.18px" }}>
+                  {item.text}
+                </p>
               </div>
-            </Col>
+            </div>
           ))}
-        </Row>
+        </div>
       </Container>
     </div>
   );

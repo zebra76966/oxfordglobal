@@ -8,7 +8,7 @@ import VisionMissionValues from "./mission";
 const AboutUs = () => {
   return (
     <>
-      <div className="w-100 bgAboutUs d-flex align-items-center justify-content-center">
+      <div className="w-100 bgAboutUs d-flex align-items-center justify-content-center" style={{ maxHeight: "425.11px" }}>
         <motion.h5 className="display-4 text-light" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.5 }}>
           About Us
         </motion.h5>
@@ -19,10 +19,7 @@ const AboutUs = () => {
           <Row className=" my-5 justify-content-center  px-lg-3 px-2">
             <Col lg={6} xl={5}>
               <h5 className="display-3 font-thin mt-5 text-start">
-                Be unic with{" "}
-                <span className="f-bold d-block" fo>
-                  Oxford Global?
-                </span>
+                Be unic with <span className="f-bold d-block">Oxford Global?</span>
               </h5>
             </Col>
             <Col lg={6} xl={5}>
