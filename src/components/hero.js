@@ -16,7 +16,7 @@ const HeroSection = () => {
             </p>
           </Col> */}
 
-          <Col md={10} lg={5} className="ms-auto ">
+          <Col sn={12} md={7} lg={5} className="ms-auto ">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
               <BookingForm />
             </motion.div>
@@ -27,7 +27,7 @@ const HeroSection = () => {
       <div className="bg-light-before py-5">
         <Row className="align-items-center px-0 mx-0 pt-5">
           <Col lg={6} style={{ zIndex: 2 }} className="ps-0">
-            <img src="model.jpg" className=" w-100" style={{ height: "571px", objectFit: "cover", borderRadius: "0 2em 2em 0em" }} />
+            <img src="model.jpg" className=" w-100 modlImg" style={{ height: "571px", objectFit: "cover", borderRadius: "0 2em 2em 0em" }} />
           </Col>
 
           <Col lg={5} xl={4} style={{ zIndex: 2 }}>

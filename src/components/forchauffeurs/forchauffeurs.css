@@ -49,6 +49,7 @@
   transform: translateY(-50%);
 }
 
+
 @media screen and (max-width: 992px) {
   .translate-lg-20 {
     transform: translateY(0%);

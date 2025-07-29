@@ -15,14 +15,14 @@ const Footer = () => {
             </Col>
 
             {/* Right Side */}
-            <Col xs="auto" className="d-flex align-items-center gap-5 flex-wrap">
+            <Col xs="auto" className="d-flex align-items-center gap-xl-5 gap-4 flex-wrap">
               <Button variant="outline-light" size="md" className="px-4 py-2 fs-6">
                 Contact
               </Button>
-              <img src="/icons/svgs/insta-w.svg" width={29.9} />
-              <img src="/icons/svgs/phone-w.svg" width={29.9} />
-              <img src="/icons/svgs/envelope-w.svg" width={29.9} />
-              <img src="/icons/svgs/help-w.svg" width={29.9} />
+              <img src="/icons/svgs/insta-w.svg" width={29.9} className="footIco mx-xl-0 mx-2" />
+              <img src="/icons/svgs/phone-w.svg" width={29.9} className="footIco mx-xl-0 mx-2" />
+              <img src="/icons/svgs/envelope-w.svg" width={29.9} className="footIco mx-xl-0 mx-2" />
+              <img src="/icons/svgs/help-w.svg" width={29.9} className="footIco mx-xl-0 mx-2" />
 
               <span className="lead">Help</span>
             </Col>

@@ -4,7 +4,7 @@ const steps = ["Location", "Car", "Details", "Payment"];
 
 const StepProgress = ({ step }) => {
   return (
-    <div className="d-flex justify-content-center gap-5 steps mx-auto" style={{ maxWidth: "967.09px" }}>
+    <div className="d-flex justify-content-between gap-5 steps mx-auto py-5 mt-5 mx-auto" style={{ maxWidth: "967.09px" }}>
       {steps.map((label, idx) => {
         const current = idx + 1;
         const isActive = step >= current;
@@ -12,15 +12,15 @@ const StepProgress = ({ step }) => {
         return (
           <div key={label} className="d-flex align-items-center gap-2">
             <div
-              className={`rounded-circle d-flex align-items-center justify-content-center fs-5  text-dark border-dark border-1 border `}
+              className={`rounded-circle d-flex align-items-center justify-content-center fs-2 font-regular  text-dark border-dark border-1 border `}
               style={{
-                width: 50,
-                height: 50,
+                width: 70,
+                height: 70,
               }}
             >
-              {isActive ? <BsCheckCircle size={28} /> : current}
+              {isActive ? <img src="./icons/svgs/check.svg" height={40} className="fw-light" /> : current}
             </div>
-            <div className="mt-2 fs-6 ">{label}</div>
+            <div className="mt-2 fs-4 font-regular ">{label}</div>
           </div>
         );
       })}

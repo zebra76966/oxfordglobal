@@ -1,9 +1,13 @@
 :root {
   --dark-color: #0f0f0f !important;
+  --light-color: #f2f2f2 !important;
 }
 
 .bg-dark {
   background-color: #0f0f0f !important;
+}
+.bg-light {
+  background-color: #f2f2f2 !important;
 }
 
 .text-lighter {
@@ -127,4 +131,107 @@ h6 {
 
 .navbar-nav .nav-link.active {
   border-bottom: 2px solid white;
+}
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.display-1form {
+  font-size: 32px;
+}
+
+@media screen and (max-width: 1200px) {
+  .brandImg {
+    height: 30px;
+  }
+  .bBtn {
+    scale: 0.7;
+  }
+  .nBtn {
+    font-size: 0.7em;
+  }
+  .checkIcon {
+    width: 22px;
+  }
+  .footIco {
+    width: 22px;
+  }
+  .modlImg {
+    height: 421px !important;
+  }
+}
+
+/* @media screen and (min-width: 993px) and (max-width: 1100px) { */
+@media screen and (max-width: 1200px) {
+  .navText {
+    font-size: 0.75em !important;
+  }
+  .fs-1 {
+    font-size: 2rem !important;
+  } /* from 2.5rem */
+  .fs-2 {
+    font-size: 1.75rem !important;
+  } /* from 2rem */
+  .fs-3 {
+    font-size: 1.5rem !important;
+  } /* from 1.75rem */
+  .fs-4 {
+    font-size: 1.25rem !important;
+  } /* from 1.5rem */
+  .fs-5 {
+    font-size: 1rem !important;
+  } /* from 1.25rem */
+  .fs-6 {
+    font-size: 0.875rem !important;
+  } /* from 1rem */
+
+  .display-1 {
+    font-size: 3.5rem !important;
+  } /* from 5rem */
+  .display-2 {
+    font-size: 3rem !important;
+  } /* from 4.5rem */
+  .display-3 {
+    font-size: 2.5rem !important;
+  } /* from 4rem */
+  .display-4 {
+    font-size: 2.25rem !important;
+  } /* from 3.5rem */
+  .display-5 {
+    font-size: 2rem !important;
+  } /* from 3rem */
+  .display-6 {
+    font-size: 1.75rem !important;
+  } /* from 2.5rem */
+
+  .display-3.csm {
+    font-size: 3.5rem !important;
+  }
+
+  .lead {
+    font-size: 1rem !important;
+  } /* from 1.25rem */
+
+  .brandImg {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .bgHero {
+    background-position: 47% -5%;
+    background-repeat: no-repeat;
+    background-size: 200%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .bgHero {
+    background-position: 37% -1%;
+    background-repeat: no-repeat;
+    background-size: 221%;
+  }
 }

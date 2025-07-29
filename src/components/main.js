@@ -31,8 +31,8 @@ const Main = () => {
             About the <span className="f-bold"> services</span>
           </h5>
           <Container className="my-5 " id="services">
-            <div className="d-lg-flex  justify-content-around">
-              <div className="w-100" style={{ maxWidth: "526.88px" }}>
+            <div className="d-lg-flex gap-4  justify-content-between">
+              <div className="w-100 mx-auto " style={{ maxWidth: "526.88px" }}>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -46,11 +46,7 @@ const Main = () => {
                   </h6>
 
                   <p className="f-bold my-4 fs-3" style={{ fontSize: "28px" }}>
-                    Elegant simplicity for{" "}
-                    <span className="d-block f-bold  " style={{ fontSize: "28px" }}>
-                      {" "}
-                      direct transfers
-                    </span>
+                    Elegant simplicity for <span className="d-block f-bold  "> direct transfers</span>
                   </p>
 
                   <p className="font-thin  lead line-height h-100" style={{ fontSize: "20px" }}>
@@ -59,13 +55,13 @@ const Main = () => {
                   </p>
 
                   <div className="w-100">
-                    <Button variant="outline-light" size="lg" className="customRounded-2 mt-5 text-center fw-light w-100" style={{ maxWidth: "334.88px", height: "84.31px", fontSize: "31.86px" }}>
+                    <Button variant="outline-light" size="lg" className="bBtn customRounded-2 mt-5 text-center fw-light w-100" style={{ maxWidth: "334.88px", height: "84.31px", fontSize: "31.86px" }}>
                       <span className="px-5">Book now</span>
                     </Button>
                   </div>
                 </motion.div>
               </div>
-              <div className="w-100" style={{ maxWidth: "526.88px" }}>
+              <div className="w-100 mx-auto" style={{ maxWidth: "526.88px" }}>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -78,12 +74,8 @@ const Main = () => {
                     By the hour
                   </h6>
 
-                  <p className="f-bold  my-4 " style={{ fontSize: "28px" }}>
-                    Flexibility and exclusivity on{" "}
-                    <span className="d-block f-bold  " style={{ fontSize: "28px" }}>
-                      {" "}
-                      your schedule
-                    </span>
+                  <p className="f-bold  my-4 fs-3" style={{ fontSize: "28px" }}>
+                    Flexibility and exclusivity on <span className="d-block f-bold  "> your schedule</span>
                   </p>
 
                   <p className="font-thin  lead line-height h-100" style={{ fontSize: "20px" }}>
@@ -91,7 +83,7 @@ const Main = () => {
                     disposal. A tailored solution for those who value control, comfort, and uninterrupted avalability without the constraints of fixed schedules.
                   </p>
                   <div className="w-100">
-                    <Button variant="outline-light" size="lg" className="customRounded-2 mt-5 text-center fw-light w-100" style={{ maxWidth: "334.88px", height: "84.31px", fontSize: "31.86px" }}>
+                    <Button variant="outline-light" size="lg" className="bBtn customRounded-2 mt-5 text-center fw-light w-100" style={{ maxWidth: "334.88px", height: "84.31px", fontSize: "31.86px" }}>
                       Book now
                     </Button>
                   </div>
@@ -102,7 +94,7 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="bgBottom   pt-5">
+      <div className="bgBottom   pt-xl-5 pt-3">
         <Container>
           <h5 className=" display-6 text-center mb-2 pt-4 font-thin text-light">
             Our <span className="f-bold"> vehicle fleet</span>

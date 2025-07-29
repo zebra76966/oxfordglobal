@@ -29,13 +29,17 @@ const BookingWizard = () => {
 
   return (
     <div className="d-flex justify-content-center align-items-center bg-light " style={{ minHeight: "70dvh" }}>
-      <Container className="  p-5">
+      <Container className="  p-lg-5">
         <StepProgress step={step} />
 
-        <div className="mx-auto" style={{ maxWidth: "841.75px" }}>
+        <div className="mx-auto" style={{ maxWidth: step == "1" ? "841.75px" : "100%" }}>
           <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} style={{ width: "100%" }}>
             <div className="mt-5">
-              {step === 1 && <StepOne />}
+              {step === 1 && (
+                <div className="w-100 py-5">
+                  <StepOne onContinue={() => nextStep()} />
+                </div>
+              )}
               {step === 2 && (
                 <StepTwo setSelectedCar={(e) => setFormData({ ...formData, selectedCar: e })} selectedCar={formData.selectedCar} onBack={() => prevStep()} onContinue={() => nextStep()} />
               )}
@@ -49,7 +53,7 @@ const BookingWizard = () => {
                   Back
                 </Button>
               )}
-              {step < totalSteps && (
+              {step < totalSteps && step !== 1 && (
                 <Button variant="dark" className="px-4 fs-5 rounded-4 py-2 btn-lg" onClick={nextStep}>
                   Next
                 </Button>
