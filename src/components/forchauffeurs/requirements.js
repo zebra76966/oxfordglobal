@@ -51,7 +51,7 @@ const Section = ({ icon, title, content }) => (
       <img src={icon} width={150} />
       <h5 className="section-title fs-3 font-thin">{title}</h5>
     </Col>
-    <Col xs={12} lg={4} md={2} className="d-flex align-items-center justify-content-center pe-md-5">
+    <Col xs={12} lg={4} md={2} className="d-flex align-items-center justify-content-center pe-md-5 ps-md-5 ps-0 ">
       <div className="border-1 border-bottom border-light py-0 my-0 w-100"></div>
     </Col>
     <Col xs={12} md={4} className="section-content font-thin fw-light text-lighter lead">
