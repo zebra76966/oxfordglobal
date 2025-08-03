@@ -1,0 +1,8 @@
+.bgForContact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../../public/contact-hero.png");
+  height: 45dvh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

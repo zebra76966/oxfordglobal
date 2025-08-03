@@ -6,6 +6,7 @@ import CarFeatureCard from "./cardHome";
 import carsFleetData from "./cars.json";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import ChatBox from "./chatBox";
 
 const Main = () => {
   const location = useLocation();
@@ -24,7 +25,7 @@ const Main = () => {
   return (
     <>
       <HeroSection />
-
+      <ChatBox />
       <div className="w-100 bg-white pt-5">
         <div className="w-100 bg-dark  py-4">
           <h5 className=" fs-2 font-thin text-center mb-3 pt-5 text-light">

@@ -118,9 +118,9 @@ const TwoStepSignup = () => {
               )}
 
               {/* Help Footer */}
-              <div className="text-center mt-3">
-                <FaQuestionCircle className="me-1" />
-                <span style={{ fontSize: "0.9rem" }}>Help</span>
+              <div className="text-center mt-3  text-muted" style={{ fontSize: "1.5rem" }}>
+                <img src="./icons/svgs/help-w.svg" style={{ filter: "invert(1)" }} className="me-2" />
+                Help
               </div>
             </motion.div>
           </Col>

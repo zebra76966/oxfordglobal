@@ -7,7 +7,7 @@ const StepOne = ({ onContinue }) => {
   const [tripType, setTripType] = useState("hourly");
 
   return (
-    <div className="bg-white  rounded-4 mx-auto w-100 my-5">
+    <div className="bg-white  rounded-4 mx-auto w-100 my-2">
       <ToggleButtonGroup type="radio" name="tripType" value={tripType} onChange={(val) => setTripType(val)} className="w-100 mb-4">
         <ToggleButton
           id="tbg-radio-1"

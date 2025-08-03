@@ -30,7 +30,7 @@ const HeroSection = () => {
             <img src="model.jpg" className=" w-100 modlImg" style={{ height: "571px", objectFit: "cover", borderRadius: "0 2em 2em 0em" }} />
           </Col>
 
-          <Col lg={5} xl={4} style={{ zIndex: 2 }}>
+          <Col lg={5} xl={4} style={{ zIndex: 2 }} className="mt-lg-0 mt-4">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
               <Container style={{ maxWidth: "498px" }}>
                 <h5 className="display-6 font-thin" style={{ fontSize: "39.3px" }}>

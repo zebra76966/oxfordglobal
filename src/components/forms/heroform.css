@@ -23,3 +23,10 @@
     scale: 0.6;
   }
 }
+
+@media screen and (max-width: 512px) {
+  .steps {
+    scale: 0.6;
+    transform-origin: left;
+  }
+}

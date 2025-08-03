@@ -23,7 +23,7 @@ const AboutUs = () => {
               </h5>
             </Col>
             <Col lg={6}>
-              <p className="font-thin text-dark lead line-height py-5 text-start">
+              <p className="font-thin text-dark lead  py-5 text-start">
                 Oxford Global was founded with the purpose of redefining executive transportation by combining traditional British elegance with contemporary efficiency and sophistication. Designed to
                 meet the needs of discerning clients, the company offers tailored solutions with discretion, comfort, and security.
               </p>
@@ -32,7 +32,7 @@ const AboutUs = () => {
               <img src="/Imagem-2.jpg" className="aboutIntroimg" />
             </Col>
             <Col lg={12} xl={10} className="col-lg-10 mx-auto  text-center">
-              <p className="font-thin text-dark lead line-height py-5 px-lg-3 text-start">
+              <p className="font-thin text-dark lead  py-5 px-lg-3 text-start">
                 Our purpose goes beyond transportation. We craft experiences that evoke emotion, build prestige, and leave a lasting impression. Every service is designed to reflect the highest
                 standards of excellence, always aligned with our clients' expectations, timelines, and unique demands. Our premium fleet is fully equipped, and our certified chauffeurs are trained to
                 deliver the very best of Oxford Global with discretion, punctuality, and unmatched sophistication. Guided by solid values, a global outlook, and a commitment to cultural adaptability,

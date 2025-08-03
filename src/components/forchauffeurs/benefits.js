@@ -23,7 +23,7 @@ const benefits = [
 
 const DriverBenefits = () => {
   return (
-    <div className="benefits-section pt-lg-5 pt-2 mt-5">
+    <div className="benefits-section pt-lg-5 pt-2 mt-lg-5 mt-2">
       <Container>
         <div className="justify-content-center d-lg-flex gap-3">
           {benefits.map((item, idx) => (

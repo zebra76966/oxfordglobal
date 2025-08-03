@@ -40,17 +40,17 @@ const LoginForm = () => {
 
             {/* Right Side - Social Login */}
             <Col md={5} lg={4} className="pt-4 pt-md-0">
-              <Button variant="outline-dark" size={"lg"} className="w-100 rounded-0 py-3 mb-2 d-flex align-items-center justify-content-center gap-2 py-2">
+              <Button variant="outline-dark" size={"lg"} className="w-100 rounded-0 px-xl-2 px-1 mb-2 d-flex align-items-center justify-content-center gap-4 py-3">
                 <FaApple />
-                Continue with Apple
+                <p className="my-0 py-0 w-75 fs-6 text-start"> Continue with Apple </p>
               </Button>
-              <Button variant="outline-dark" size={"lg"} className="w-100 rounded-0 py-3 mb-2 d-flex align-items-center justify-content-center gap-2 py-2">
+              <Button variant="outline-dark" size={"lg"} className="w-100 rounded-0 px-xl-2 px-1   mb-2 d-flex align-items-center justify-content-center gap-4 py-3">
                 <FaGoogle />
-                Continue with Google
+                <p className="my-0 py-0 w-75 fs-6 text-start">Continue with Google</p>
               </Button>
-              <Button variant="outline-dark" size={"lg"} className="w-100 rounded-0 py-3 d-flex align-items-center justify-content-center gap-2 py-2">
+              <Button variant="outline-dark" size={"lg"} className="w-100 rounded-0 px-xl-2 px-1  d-flex align-items-center justify-content-center gap-4 py-3">
                 <FaFacebookF />
-                Continue with Facebook
+                <p className="my-0 py-0 w-75 fs-6 text-start">Continue with Facebook</p>
               </Button>
             </Col>
 

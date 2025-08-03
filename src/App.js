@@ -10,6 +10,8 @@ import TwoStepSignup from "./components/auth/signup";
 import ForChauffers from "./components/forchauffeurs/forchauffers";
 import AboutUs from "./components/about/about";
 import BookingWizard from "./components/forms/booking/booking";
+import ContactMapForm from "./components/contact/contactmain";
+import MultiStepFormChauffer from "./components/forchauffeurs/application";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/forchauffeurs" element={<ForChauffers />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/booking" element={<BookingWizard />} />
+        <Route path="/contact" element={<ContactMapForm />} />
+        <Route path="/apply-chauffer/" element={<MultiStepFormChauffer />} />
       </Routes>
       <Footer />
     </Router>

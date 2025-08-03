@@ -64,6 +64,14 @@ const VisionMissionValues = () => {
                 <h5 className="value-title">Safety & Reliability</h5>
                 <p className=" lead value-desc">Meticulous planning and execution to guarantee peace of mind.</p>
               </Col>
+              <Col md={6} className="mb-4">
+                <h5 className="value-title">Cultural Adaptability</h5>
+                <p className=" lead value-desc">Awareness and respect for cultural nuances, delivering tailored service anywhere in the world.</p>
+              </Col>
+              <Col md={6} className="mb-4">
+                <h5 className="value-title">Personalized Service</h5>
+                <p className=" lead value-desc">Flexibility and attention to individual needs, offering a truly bespoke experience.</p>
+              </Col>
             </Row>
           </Col>
         </Row>

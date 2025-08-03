@@ -34,7 +34,7 @@ const BookingWizard = () => {
 
         <div className="mx-auto" style={{ maxWidth: step == "1" ? "841.75px" : "100%" }}>
           <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} style={{ width: "100%" }}>
-            <div className="mt-5">
+            <div className="">
               {step === 1 && (
                 <div className="w-100 py-5">
                   <StepOne onContinue={() => nextStep()} />
@@ -47,7 +47,7 @@ const BookingWizard = () => {
               {step === 4 && <StepFour />}
             </div>
 
-            <div className="d-flex justify-content-between mt-4">
+            <div className="d-flex justify-content-between my-4">
               {step > 1 && (
                 <Button variant="outline-dark" className="px-4 fs-5 rounded-4 py-2 btn-lg" onClick={prevStep}>
                   Back
