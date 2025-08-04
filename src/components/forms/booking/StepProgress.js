@@ -4,7 +4,7 @@ const steps = ["Location", "Car", "Details", "Payment"];
 
 const StepProgress = ({ step }) => {
   return (
-    <div className="d-flex flex-md-row flex-wrap justify-content-between gap-5 steps mx-auto  mt-5 mx-auto  mb-5" style={{ maxWidth: "967.09px" }}>
+    <div className="d-flex flex-md-row flex-wrap justify-content-between gap-xl-5 steps mx-auto  mt-5 mx-auto  mb-xl-5 mb-3" style={{ maxWidth: "967.09px" }}>
       {steps.map((label, idx) => {
         const current = idx + 1;
         const isActive = step >= current;

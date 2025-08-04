@@ -45,12 +45,12 @@ const StepOne = ({ onContinue }) => {
 
       <Form className="px-4 pb-4 pt-2">
         <InputGroup className="mb-3  bg-light px-3 py-4 rounded d-flex gap-2 align-items-center">
-          <CiLocationOn className="fs-1 text-muted" />
+          <CiLocationOn className="fs-3 text-muted" />
           <Form.Control type="text" placeholder="Where from?" className="border-0 bg-light display-1form" />
         </InputGroup>
 
         <InputGroup className="mb-3  bg-light px-3 py-4 rounded d-flex gap-2 align-items-center">
-          <CiLocationOn className=" fs-1 text-muted" />
+          <CiLocationOn className=" fs-3 text-muted" />
           <Form.Control type="text" placeholder="Where to?" className="border-0 bg-light display-1form" />
         </InputGroup>
 
