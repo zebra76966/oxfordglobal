@@ -153,8 +153,17 @@ h6 {
 }
 
 .ChatBox {
-  max-width: 521.83px;
-  height: 634px;
+  max-width: 515.83px;
+  height: 624px;
+}
+
+.ChatBoxIcon {
+  scale: 0.8;
+}
+
+.chatBoxWrapper {
+  bottom: 5rem;
+  right: 5rem;
 }
 
 @media (min-width: 1300px) {
@@ -185,6 +194,16 @@ h6 {
   }
   .modlImg {
     height: 421px !important;
+  }
+  .ChatBox {
+    scale: 0.9;
+  }
+  .ChatBoxIcon {
+    scale: 0.8;
+  }
+  .chatBoxWrapper {
+    bottom: 2rem;
+    right: 2rem;
   }
 }
 

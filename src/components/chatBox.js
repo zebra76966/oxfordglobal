@@ -15,7 +15,7 @@ export default function ChatBox() {
   };
 
   return (
-    <div style={{ position: "fixed", bottom: "5rem", right: "5rem", zIndex: 1050 }}>
+    <div className="chatBoxWrapper" style={{ position: "fixed", zIndex: 1050 }}>
       {isOpen ? (
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2, delay: 0.2 }}>
           <Card className="ChatBox rounded-4 border-0" style={{ boxShadow: "10px -7px 18px rgba(0, 0, 0, 0.15)" }}>
@@ -53,7 +53,12 @@ export default function ChatBox() {
           </Card>
         </motion.div>
       ) : (
-        <Button variant="light" className="d-flex align-items-center justify-content-center bg-light" onClick={() => setIsOpen(true)} style={{ width: "120px", height: "120px", borderRadius: "50%" }}>
+        <Button
+          variant="light"
+          className="d-flex align-items-center justify-content-center bg-light ChatBoxIcon"
+          onClick={() => setIsOpen(true)}
+          style={{ width: "120px", height: "120px", borderRadius: "50%" }}
+        >
           <img src="/icons/svgs/chat.svg" className="mt-1" height={53} />
         </Button>
       )}
